@@ -23,26 +23,17 @@ html {
   }
   body {
     /* Margin bottom by footer height */
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 40px;
+    height: 60px;
     background-image: linear-gradient(45deg, #333333,blueviolet);
     color: darkgray;
-    line-height: 40px; /* Vertically center the text there */
-}
-
-.footer-design {
-    
-    height: 7%;
-    position: fixed;
-    bottom:0px;
-    
-    padding: 2%;
+    line-height: 60px; /* Vertically center the text there */
 }
 
 .navbar {
@@ -56,4 +47,14 @@ html {
 .btn-group-lg>.btn, .btn-lg {
 
     margin-bottom: 1rem;
+}
+
+.content-title {
+    padding-top: 1rem;
+}
+.content-title h2 {
+    font-weight: bolder;
+}
+.row h3 {
+    margin: 5%;
 }
