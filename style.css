@@ -4,7 +4,8 @@ body {
 
 .container {
     background-color: #FFfff0;
-    /* padding: 2%; */
+    width: 90%;
+    margin: auto;
 }
 
 .line-break {
@@ -19,7 +20,6 @@ body {
 .footer-design {
     background-image: linear-gradient(45deg, #333333,blueviolet);
     height: 7%;
-    /* width: 100%; */
     position: fixed;
     bottom:0px;
     color: darkgray;
@@ -28,4 +28,13 @@ body {
 
 .navbar {
     background-color: #FFfff0;
+}
+.form-row{
+    width: 85%;
+    margin-left: .75rem;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+
+    margin-bottom: 1rem;
 }
