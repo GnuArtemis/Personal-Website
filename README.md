@@ -3,4 +3,8 @@ A set of three pages that comprise a personal website. There is a complete "Abou
 
 The Site is fully formatted, with personalized CSS styling and mobile responsive margins and text. All pages contain a functional navbar and an aesthetic footer.
 
+github repository: https://github.com/GnuArtemis/Personal-Website
+
+deployed link: https://gnuartemis.github.io/Personal-Website/
+
 Planned updates: form functionality, portfolio elements.
