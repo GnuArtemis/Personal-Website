@@ -9,29 +9,28 @@
     <!-- BootstrapCDN CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Personal styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Nav wrapper creates a bootstrap-stylized navbar by using the "navbar" class. Navbar-expand-lg creates mobile responsiveness at a breakpoint of laptop-size screen. Navbar elements can be manipulated with Bootstrap's margins and flexbox functionality.-->
-    <!-- Default bootstrap "light" formatting. -->
+    <!-- Nav wrapper creates a bootstrap-stylized navbar by using the "navbar" class. Navbar-expand-lg creates mobile responsiveness at a breakpoint of laptop-size screen. Navbar elements can be manipulated with Bootstrap's margins and flexbox functionality. Some default bootstrap navbar formatting is used.-->
     <nav class="navbar navbar-expand-lg navbar-light">
 
-        <!-- Creates a top right website "Brand", in this case my name, with nice auto formatting. mr-auto (margin-right automatic) takes this element to the right, mb-0 (margin-bottom zero) eliminates unnecessary whitespace in the navbar.  -->
+        <!-- Creates a top right website "Brand", in this case my name. mb-0 (margin-bottom zero) eliminates unnecessary whitespace in the navbar.  -->
         <span class="navbar-brand mb-0 h1 brand-design">
             Ann Guinee
         </span>
 
         <!-- At the large breakpoint (as set by navbar-expand-lg), the navigation menu toggles from an always-visible horizontal list to a menu button that can be expanded. The button is linked to the menu by way of the ID "navbarSupportedContent" The purpose is to keep font size large (and thus links accessible) on smaller devices. The ARIA elements are not essential for function, but are for the purposes of accessibility.-->
-        <!-- I would prefer that the navbar menu elements were left-aligned. I suspect I would have to modify the navbar-collapse class itself?  -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Creates a navbar that can collapse into the icon above at a large breakpoint -->
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
-            <!-- nav-item active creates a visual distinction for the currently open tab -->
-            <!-- In this website, since there's only a few pages, I can manually modify the navbar for each page, to indicate active tabs etc. Would you mind sending me some references for how to make a more organic toolbar? For example, is it possible to make a navbar that lights up the navigation button when it recognizes that you're at its designated link? -->
+            <!-- nav-item active creates a visual distinction for the currently open tab. The class ml-auto on the UL aligns the navigation items to the right, in contrast to the brand above. -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="contact.html">Contact</a>
@@ -59,17 +58,22 @@
     <br>
     <br>
 
-    <main class="container">
+    <!-- The container wraps all the informational content on the page: a form that allows participants to contact me directly without having to go through social media. Javascript still in progress. px-3 increases the whitespace between text and border. -->
+    <main class="container px-3">
         <div class="row">
+            <!-- In order to create a nice asymetric alignment on larger screens, there are 2 columns created, one with content, one empty. Below the middle breakpoint, the empty column collapses and the content fills the entire screen. -->
             <div class="col-md-9">
+                <!-- Form heading -->
                 <div class="row">
                     <div class="col content-title">
                         <h2>Contact</h2>
                     </div>
                 </div>
 
+                <!-- An aesthetic class that creates a purple elliptical line break. -->
                 <div class="row line-break"></div>
 
+                <!-- Form "name" entry -->
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
@@ -79,6 +83,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Form "email" entry -->
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
@@ -88,6 +94,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Form "message" entry -->
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
@@ -97,20 +105,25 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Form "submit" button -->
                 <div class="row">
                     <div class="col">
                         <button type="button" class="btn btn-primary btn-lg">Submit</button>
                     </div>
                 </div>
             </div>
+
+            <!-- Empty div to control spacing in a mobile-responsive manner. -->
             <div class="col-md-3"></div>
+            
         </div>
     </main>
 
     <br>
     <br>
 
-
+    <!-- A footer, stuck to the bottom of the page or window, with some aesthetic formatting described in CSS. -->
     <footer class="footer">
         <span>&COPY;Copyright</span>
     </footer>
