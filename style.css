@@ -3,9 +3,12 @@ body {
 }
 
 .container {
-    background-color: #FFfff0;
     width: 90%;
     margin: auto;
+}
+
+.col,.col-md-9 {
+    background-color: #FFfff0;
 }
 
 .line-break {
