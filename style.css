@@ -58,3 +58,13 @@ html {
 .row h3 {
     margin: 5%;
 }
+
+.brand-design {
+    background-color: #792DBF;
+    font-style: italic;
+    font-weight: bold;
+    padding: .5rem;
+}
+.footer span {
+    padding: .5rem;
+}
