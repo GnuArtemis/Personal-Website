@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Music Chord Identifier</title>
 
-    <!-- BootstrapCDN CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <!-- Personal styling -->
+    <!-- Personal styling -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <!-- Nav wrapper creates a bootstrap-stylized navbar by using the "navbar" class. Navbar-expand-lg creates mobile responsiveness at a breakpoint of laptop-size screen. Navbar elements can be manipulated with Bootstrap's margins and flexbox functionality. Some default bootstrap navbar formatting is used.-->
     <nav class="navbar navbar-expand-lg navbar-light">
 
         <!-- Creates a top right website "Brand", in this case my name. mb-0 (margin-bottom zero) eliminates unnecessary whitespace in the navbar.  -->
@@ -36,7 +33,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Portfolio
@@ -45,82 +42,65 @@
                         <a class="dropdown-item" href="portfolio.html">General</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Chord-Identifier.html">Music Chord<br>Identifier</a>
-                        <a class="dropdown-item" href="portfolio.html#project2">Project 2</a>
-                        <a class="dropdown-item" href="portfolio.html#project3">Project 3</a>
+                        <a class="dropdown-item" href="#project2">Project 2</a>
+                        <a class="dropdown-item" href="#project3">Project 3</a>
                     </div>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
+    <br>
+    <br>
 
-    <br>
-    <br>
-    
-    <!-- The container wraps all the informational content on the page: Bio, headshot, social media links. px-3 increases the whitespace between text and border. -->
     <main class="container px-3">
         <div class="row">
-            <!-- In order to create a nice asymetric alignment on larger screens, there are 2 columns created, one with content, one empty. Below the middle breakpoint, the empty column collapses and the content fills the entire screen. -->
             <div class="col-md-9">
+                <!-- Content title -->
                 <div class="row">
                     <div class="col content-title">
-                        <h2>About Me</h2>
+                        <h2>Music Chord Identifier</h2>
                     </div>
                 </div>
 
                 <!-- An aesthetic class that creates a purple elliptical line break. -->
                 <div class="row line-break"></div>
 
-                <!-- This will eventually be my brand statement, but as that is still in progress the text is for my most recent bio. -->
-                <div class="row">
-                    <div class="col">
-                        <!-- headshot ID has to be an ID, rather than a class, to fix a bug where Git deployment was not displaying the CSS class -->
-                        <img src="Images/Headshot.jpg" class="img-thumbnail float-left" id=headshot
-                            alt="A headshot of Ann Guinee">
-                        <p>I am a recent graduate (2019) from Case Western Reserve University and the Cleveland
-                            Institute of Music, BA in Mathematics and BM in Viola Performance. After spending some time
-                            working for NWPS as an Analyst, I am seeking a position more closely aligned with my
-                            interests in technology and research.
-                        </p>
-                        <p> My dream is to research the science of music, and would particularly enjoy pushing the
-                            boundaries of music technology and software. To that end, I'm looking for employment as a
-                            coding professional.
-                        </p>
-                        <p> I worked with the Virtual Learning department at CIM to present music lessons with current
-                            technology--from history to science applications--to audiences anywhere between kindergarten
-                            and senior retirement around the globe. Reaching out to disparate communities in this way
-                            illuminates both the importance of music to all human beings, and the importance of
-                            technology that allows us to reach disparate communities.
-                        </p>
-                        <br>
-                        
-                    </div>
-                </div>
+                <img class="img-fluid mt-2" src="Images/Chord Identifier Main.PNG"
+                    alt="Image of the Chord Identifier project, with a piano keyboard and several informational sections">
 
-                <!-- The list below contains links to my social media pages. -->
-                <div class="row">
-                    <div class="col">
-                        <ul class="list-group list-group-horizontal-sm">
-                            <li class="list-group-item flex-fill"><a
-                                    href="https://www.linkedin.com/in/ann-guinee-b8186718b/" target="blank">LinkedIn</a>
-                            </li>
+                <h3>Description</h3>
+                <p class="px-2">Our goal with this project is to create a simple, accessible tool that can be used for
+                    learning basic
+                    music theory at an approximately 5th-grade level. By way of a virtual keyboard, users can designate
+                    note combinations, and upon submission, an analysis of the chord (root and quality, or interval type
+                    if less than 3 unique notes) will be displayed. The program displays an exact match if one can be
+                    found, and the most likely result with side list of less likely results if no exact match exists.
+                    Upon recieving a chordal input, users can also seek out further information about each chord, with a
+                    piano representation, a sound example, and in certain situations a definition.</p>
 
-                            <li class="list-group-item flex-fill"> <a href="https://github.com/GnuArtemis">GitHub</a>
-                            </li>
-                            <li class="list-group-item flex-fill"><a
-                                href="" target="blank">Resume</a>
-                        </li>
-                        </ul>
+                    <div class="d-flex justify-content-between">
+                        <a class="justify-content-end"
+                            href="https://github.com/GnuArtemis/Music-Chord-Identifier">Github Repository</a>
+                        <a class="justify-content-end"
+                            href="https://gnuartemis.github.io/Music-Chord-Identifier/index.html">Website</a>
                     </div>
-                </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                        </div>
+                    </div>
+
             </div>
 
             <!-- Empty div to control spacing in a mobile-responsive manner. -->
             <div class="col-md-3"></div>
-
+            
         </div>
+
     </main>
 
     <br>
