@@ -7,4 +7,4 @@ github repository: https://github.com/GnuArtemis/Personal-Website
 
 deployed link: https://gnuartemis.github.io/Personal-Website/
 
-Planned updates: form functionality, portfolio elements.
+Planned updates: portfolio elements
