@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
+    <title>Music Chord Identifier</title>
 
-    <!-- BootstrapCDN CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Personal styling -->
@@ -14,7 +13,6 @@
 </head>
 
 <body>
-    <!-- Nav wrapper creates a bootstrap-stylized navbar by using the "navbar" class. Navbar-expand-lg creates mobile responsiveness at a breakpoint of laptop-size screen. Navbar elements can be manipulated with Bootstrap's margins and flexbox functionality. Some default bootstrap navbar formatting is used.-->
     <nav class="navbar navbar-expand-lg navbar-light">
 
         <!-- Creates a top right website "Brand", in this case my name. mb-0 (margin-bottom zero) eliminates unnecessary whitespace in the navbar.  -->
@@ -33,9 +31,9 @@
             <!-- nav-item active creates a visual distinction for the currently open tab. The class ml-auto on the UL aligns the navigation items to the right, in contrast to the brand above. -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Portfolio
@@ -45,7 +43,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Chord-Identifier.html">Music Chord<br>Identifier</a>
                         <a class="dropdown-item" href="Personify.html">Personify</a>
-                        <a class="dropdown-item" href="portfolio.html#project3">Project 3</a>
+                        <a class="dropdown-item" href="#project3">Project 3</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -54,74 +52,65 @@
             </ul>
         </div>
     </nav>
-
     <br>
     <br>
 
-    <!-- The container wraps all the informational content on the page: a form that allows participants to contact me directly without having to go through social media. Javascript still in progress. px-3 increases the whitespace between text and border. -->
     <main class="container px-3">
         <div class="row">
-            <!-- In order to create a nice asymetric alignment on larger screens, there are 2 columns created, one with content, one empty. Below the middle breakpoint, the empty column collapses and the content fills the entire screen. -->
             <div class="col-md-9">
-                <!-- Form heading -->
+                <!-- Content title -->
                 <div class="row">
                     <div class="col content-title">
-                        <h2>Contact</h2>
+                        <h2>Personify</h2>
                     </div>
                 </div>
 
                 <!-- An aesthetic class that creates a purple elliptical line break. -->
                 <div class="row line-break"></div>
 
-                <p> <strong>Email:</strong> annmguinee@gmail.com</p>
-                <p> <strong>Phone Number:</strong> 206-817-6872</p>
+                <img class="img-fluid mt-2" src="Assets/Personify Image.PNG"
+                    alt="Depiction of the Personify profile page, with multiple bars representing personality result proportions">
 
-                <!-- Form "name" entry -->
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="contact-Name">Name:</label>
-                            <input type="text" class="form-control" placeholder="Name - COMING SOON" id=contact-Name
-                                name="First-Last" readonly>
+                <h3>Description</h3>
+                <p class="px-2">Our group's goal with this project was to not only give the user a wide variety of buzzfeed 
+                    style quizzes, but to give the user an indication of how they answered across all tests.  You might be
+                    whole wheat bread and Dumbledore from Harry Potter, but what do those results have in common? What unique
+                    information is offered? This app relates users, quiz results, and quizzes through a log in system, backed
+                    by mysql and node. Additionally, users can create their own quizzes for the benefit of themselves and other
+                    users. For more technical information, please refer to the Github repository.</p>
+
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li><a href="https://bulma.io/" target="blank">Bulma</a>: CSS framework </li>
+                        <li><a href="https://jquery.com/" target="blank">jQuery</a>: Javascript Library </li>
+                        <li><a href="https://nodejs.org/en/" target="blank">nodejs</a>: Javascript runtime</li>
+                        <li><a href="https://expressjs.com/" target="blank">Express</a>: Javascript library for servers</li>
+                        <li><a href="https://www.mysql.com/" target="blank">MySql</a>: Database</li>
+                        <li><a href="https://www.npmjs.com/package/express-handlebars">Handlebars</a>: HTML templates</li>
+                        <li><a href="https://www.npmjs.com/package/bcrypt">Bcrypt.js</a>: Javascript library for password security</li>
+                    </ul>
+                    <br>
+
+                    <div class="d-flex justify-content-between">
+                        <a class="justify-content-end"
+                            href="https://github.com/emilygoeres/Personality-Quiz">Github Repository</a>
+                        <a class="justify-content-end"
+                            href="https://personify-personality-quiz.herokuapp.com/">Website</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <br>
                         </div>
                     </div>
-                </div>
 
-                <!-- Form "email" entry -->
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="contact-Email">Email:</label>
-                            <input type="email" class="form-control" placeholder="Email - COMING SOON" id=contact-Email
-                                name="respond-To" readonly>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form "message" entry -->
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="contact-Message">Message:</label>
-                            <input type="text" class="form-control"
-                                placeholder="Coming soon! Please contact at annmguinee@gmail.com for the time being."
-                                id=contact-Message name="Message" readonly>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form "submit" button -->
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
-                    </div>
-                </div>
             </div>
 
             <!-- Empty div to control spacing in a mobile-responsive manner. -->
             <div class="col-md-3"></div>
-
+            
         </div>
+
     </main>
 
     <br>
